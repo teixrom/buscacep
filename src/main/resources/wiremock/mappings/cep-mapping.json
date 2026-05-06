@@ -1,0 +1,48 @@
+{
+  "mappings": [
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "01001-000" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"01001-000\", \"logradouro\": \"Praça da Sé\", \"bairro\": \"Sé\", \"cidade\": \"São Paulo\", \"uf\": \"SP\" }" }
+    },
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "01310-200" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"01310-200\", \"logradouro\": \"Avenida Paulista\", \"bairro\": \"Bela Vista\", \"cidade\": \"São Paulo\", \"uf\": \"SP\" }" }
+    },
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "04538-133" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"04538-133\", \"logradouro\": \"Avenida Brigadeiro Faria Lima\", \"bairro\": \"Itaim Bibi\", \"cidade\": \"São Paulo\", \"uf\": \"SP\" }" }
+    },
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "02011-000" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"02011-000\", \"logradouro\": \"Avenida Cruzeiro do Sul\", \"bairro\": \"Santana\", \"cidade\": \"São Paulo\", \"uf\": \"SP\" }" }
+    },
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "03101-000" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"03101-000\", \"logradouro\": \"Rua da Mooca\", \"bairro\": \"Mooca\", \"cidade\": \"São Paulo\", \"uf\": \"SP\" }" }
+    },
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "05001-000" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"05001-000\", \"logradouro\": \"Rua Turiaçu\", \"bairro\": \"Perdizes\", \"cidade\": \"São Paulo\", \"uf\": \"SP\" }" }
+    },
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "08010-000" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"08010-000\", \"logradouro\": \"Rua Marechal Tito\", \"bairro\": \"São Miguel Paulista\", \"cidade\": \"São Paulo\", \"uf\": \"SP\" }" }
+    },
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "04101-300" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"04101-300\", \"logradouro\": \"Rua Vergueiro\", \"bairro\": \"Vila Mariana\", \"cidade\": \"São Paulo\", \"uf\": \"SP\" }" }
+    },
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "05407-002" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"05407-002\", \"logradouro\": \"Rua Oscar Freire\", \"bairro\": \"Pinheiros\", \"cidade\": \"São Paulo\", \"uf\": \"SP\" }" }
+    },
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "03314-000" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"03314-000\", \"logradouro\": \"Rua Itapura\", \"bairro\": \"Tatuapé\", \"cidade\": \"São Paulo\", \"uf\": \"SP\" }" }
+    },
+    {
+      "request": { "method": "GET", "urlPath": "/cep", "queryParameters": { "cep": { "equalTo": "12345-678" } } },
+      "response": { "status": 200, "headers": { "Content-Type": "application/json" }, "body": "{ \"cep\": \"12345-678\", \"logradouro\": \"Rua Exemplo\", \"bairro\": \"Bairro Exemplo\", \"cidade\": \"Cidade Exemplo\", \"uf\": \"UF\" }" }
+    }
+  ]
+}
