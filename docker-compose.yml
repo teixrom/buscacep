@@ -1,18 +1,23 @@
 services:
   db:
-    image: docker.io/library/postgres:15  # Adicionado docker.io/library/
+    image: docker.io/library/postgres:15
     container_name: cep-postgres
     ports:
-      - "5432:5432"
+      - "${DB_PORT:-5432}:5432"
     environment:
-      POSTGRES_DB: cepdb
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ${DB_NAME:-cepdb}
+      POSTGRES_USER: ${DB_USER:-user}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-password}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-user} -d ${DB_NAME:-cepdb}"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
 
   wiremock:
     image: docker.io/wiremock/wiremock:latest
     container_name: cep-wiremock
     ports:
-      - "8081:8080"
+      - "${WIREMOCK_PORT:-8081}:8080"
     volumes:
       - ./src/main/resources/wiremock:/home/wiremock
